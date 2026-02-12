@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Consultation - KWLewis Inc.</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/shared.css" />
+    
+    <!-- Google Search Console verification -->
+    <meta name="google-site-verification" content="PLACEHOLDER_SEARCH_CONSOLE_CODE" />
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <header class="site-header site-header--kwl">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">KWLewis Inc.</a>
+                <nav class="main-nav" aria-label="Primary navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="truth-series.html" class="nav-link">Truth Series</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="request-consultation.html" class="nav-link active" aria-current="page">Request Consultation</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="container">
+                <h1>Request Consultation</h1>
+                <p class="intro-text">Every engagement begins with a conversation to understand your project, goals, and institutional readiness. Please provide the information below, and we'll be in touch to discuss how we can help.</p>
+            </div>
+        </section>
+
+        <section class="content-section form-section">
+            <div class="container">
+                <form action="https://formspree.io/f/REPLACE_WITH_ID" method="POST" class="consultation-form">
+                    <input type="hidden" name="_subject" value="New Consultation Request - KWLewis Inc." />
+                    <input type="hidden" name="_source" value="kwlewisinc.com" />
+                    
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="organization">Organization (optional)</label>
+                        <input type="text" id="organization" name="organization" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="need-type">Type of Need <span class="required">*</span></label>
+                        <select id="need-type" name="need-type" required>
+                            <option value="">Select...</option>
+                            <option value="Land & Asset Advisory">Land & Asset Advisory</option>
+                            <option value="Institutional Advisory">Institutional Advisory</option>
+                            <option value="Strategic Planning">Strategic Planning</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Please describe your project, goals, and what you're hoping to achieve."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                    
+                    <p class="form-note">Thank you. Your request has been received and will be reviewed. We'll be in touch shortly to discuss next steps.</p>
+                </form>
+            </div>
+        </section>
+
+        <section class="content-section engagement-info">
+            <div class="container">
+                <h2>What to Expect</h2>
+                <p>After submitting your consultation request, we'll review your information and reach out to schedule an initial conversation. This consultation is designed to understand your project, assess institutional readiness, and determine how we can best support your goals.</p>
+                
+                <p><strong>Advisory services only.</strong> KWLewis Inc. does not provide financing, brokerage, transaction execution, or legal counsel. We guide clients through strategic planning and institutional navigation—but we do not execute transactions or arrange financing.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer site-footer--kwl">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-company">
+                    <p class="footer-title">Kenneth William Lewis, Inc.</p>
+                    <p class="footer-address">9815 Sam Furr Road, Building J, PMB 25</p>
+                    <p class="footer-address">Huntersville, NC 28078</p>
+                    <p class="footer-contact">1-800-913-2084</p>
+                </div>
+                
+                <div class="footer-disclaimer">
+                    <p>Advisory services only. No financing, brokerage, or transaction execution.</p>
+                </div>
+                
+                <div class="footer-legal">
+                    <p>&copy; 2026 KWLewis Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
